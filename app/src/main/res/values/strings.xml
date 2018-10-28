@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Custom Component Layout</string>
+    <!--Custom Component Input-->
+    <string name="cci_txt_required">Obligatorio</string>
+    <string name="cci_txt_optional">Opcional</string>
+    <string name="cci_hint_default">Escriba un texto</string>
+</resources>

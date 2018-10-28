@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Component Custom Input-->
+    <declare-styleable name="ComponentCustomInput">
+        <attr name="required_text" format="reference|string" />
+        <attr name="hint_text" format="reference|string" />
+        <attr name="icon" format="reference" />
+        <attr name="input_type" format="reference|string" />
+        <attr name="max_length" format="reference|integer" />
+        <attr name="icon_space" format="reference|string" />
+        <attr name="ime_options" format="reference|string" />
+    </declare-styleable>
+</resources>
