@@ -18,8 +18,7 @@
             app:ime_options="actionNext"
             app:input_type="email"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <com.example.briix.customcomponentlayout.widget.CustomView
             android:id="@+id/edit_cellphone"

@@ -1,11 +1,40 @@
-*.iml
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio
+.idea/
 .gradle
-/local.properties
-/.idea/caches/build_file_checksums.ser
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
+/*/out
+**/build/
+**/node_modules/
+/*/*/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
 .DS_Store
-/build
-/captures
-.externalNativeBuild
+*.jks
+!rappi_debug.jks
+*.hprof
+*.log
+/PATH
+
+.idea/instapk.xml
+instapk.log*
+
+gradle.properties

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.briix.customcomponentlayout.databinding.ActivityMainBinding;
+import com.example.briix.customcomponentlayout.models.Information;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,11 +18,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        //Metodo construido en la clase CustomView
-        mBinding.editEmail.setText("heder.ithamar.hr@gmail.com");
+        Information user = new Information("heder.ithamar.hr@gmail.com");
+        //Seteo de un objeto a la vista
+        mBinding.editEmail.setModel(user);
+
         //Obtener la instancia del Textinputlayout
         mBinding.editCellphone.getTextInputLayout().requestFocus();
         //Obtener la instancia del EditText
+
+        //Seteo de un objeto a la vista
+        mBinding.editEmail.setModel(user);
+
+        Information location = new Information("Avenida principal #123");
+        mBinding.editLocation.setModel(location);
         mBinding.editLocation.getEditText().setEnabled(false);
 
         mBinding.buttonContinue.setOnClickListener(new View.OnClickListener() {

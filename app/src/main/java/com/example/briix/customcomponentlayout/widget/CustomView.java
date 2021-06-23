@@ -19,13 +19,13 @@ import android.widget.TextView;
 
 import com.example.briix.customcomponentlayout.R;
 import com.example.briix.customcomponentlayout.databinding.CustomViewBinding;
+import com.example.briix.customcomponentlayout.models.Information;
 
 import java.util.ArrayList;
 
 public class CustomView extends ConstraintLayout {
 
     CustomViewBinding mBinding;
-
 
     public CustomView(Context context){
         super(context);
@@ -125,6 +125,10 @@ public class CustomView extends ConstraintLayout {
 
     public void setText(String text){
         mBinding.editCustom.setText(text);
+    }
+
+    public void setModel(Information information){
+        mBinding.setModel(information);
     }
 
     public EditText getEditText(){

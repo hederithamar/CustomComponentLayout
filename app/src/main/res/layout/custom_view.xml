@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.briix.customcomponentlayout.models.Information" />
+    </data>
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constrain_component"
         android:layout_width="match_parent"
@@ -44,6 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:saveEnabled="false"
+                android:text="@{ model.getContent() }"
                 tools:text="@string/cci_hint_default" />
 
         </android.support.design.widget.TextInputLayout>
